@@ -21,11 +21,19 @@ mark.fill{background:#f3e3a6;color:#111;padding:0 .2em}
 .doc .review-panel{border:1px solid #111;padding:16px 18px;margin:0 0 28px}
 .doc .review-panel p{margin:0 0 8px}.doc .review-panel p:last-child{margin:0}
 .doc ol.notes li{scroll-margin-top:24px}
+.doc .shots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin:20px 0 8px}
+.doc .shots figure{margin:0;display:flex;flex-direction:column;align-items:center;gap:10px}
+.doc .shots .device{--dw:260px}
+.doc .shots .device::after{display:none}
+.doc .shots .device .screen{aspect-ratio:auto}
+.doc .shots .device .screen img{height:auto;display:block}
+.doc .shots figcaption{font-family:var(--label);font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+@media (max-width:600px){.doc .shots{gap:12px}.doc .shots .device{--dw:170px}}
 </style>
 </head>
 <body>
 <header class="doc-head"><div class="wrap bar">
-  <a class="wordmark" href="/">GirlCode</a>
+  <a class="wordmark" href="/legal-review-a8a303ee/">GirlCode</a>
   <span class="label title">Review</span>
   <a class="label" href="/legal-review-a8a303ee/">Review home</a>
 </div></header>

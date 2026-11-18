@@ -21,6 +21,14 @@ mark.fill{background:#f3e3a6;color:#111;padding:0 .2em}
 .doc .review-panel{border:1px solid #111;padding:16px 18px;margin:0 0 28px}
 .doc .review-panel p{margin:0 0 8px}.doc .review-panel p:last-child{margin:0}
 .doc ol.notes li{scroll-margin-top:24px}
+.doc .shots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin:20px 0 8px}
+.doc .shots figure{margin:0;display:flex;flex-direction:column;align-items:center;gap:10px}
+.doc .shots .device{--dw:260px}
+.doc .shots .device::after{display:none}
+.doc .shots .device .screen{aspect-ratio:auto}
+.doc .shots .device .screen img{height:auto;display:block}
+.doc .shots figcaption{font-family:var(--label);font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+@media (max-width:600px){.doc .shots{gap:12px}.doc .shots .device{--dw:170px}}
 </style>
 <style>
 .draft-bar{background:#f3e3a6;color:#111;border-bottom:1px solid #111;position:relative;z-index:50}
@@ -41,7 +49,7 @@ mark.fill{background:#f3e3a6;color:#111;padding:0 .2em}
   <h1>Website Terms of Use</h1>
 <p>Last Modified: <mark class="fill">[publish date]</mark></p>
 <h2>1. Acceptance of the Terms of Use</h2>
-<p>These terms of use are entered into by and between You and ASPARKO LLC ("<strong>Company</strong>," "<strong>we</strong>," or "<strong>us</strong>"). The following terms and conditions, together with any documents they expressly incorporate by reference (collectively, "<strong>Terms of Use</strong>"), govern your access to and use of <a href="https://itsgirlcode.app/">https://itsgirlcode.app</a> including any content, functionality and services offered on or through <a href="https://itsgirlcode.app/">https://itsgirlcode.app</a> (the "<strong>Website</strong>"), whether as a guest or a registered user.</p>
+<p>These terms of use are entered into by and between You and ASPARKO LLC ("<strong>Company</strong>," "<strong>we</strong>," or "<strong>us</strong>"). The following terms and conditions, together with any documents they expressly incorporate by reference (collectively, "<strong>Terms of Use</strong>"), govern your access to and use of <a href="index.html">https://itsgirlcode.app</a> including any content, functionality and services offered on or through <a href="index.html">https://itsgirlcode.app</a> (the "<strong>Website</strong>"), whether as a guest or a registered user.</p>
 <p>Please read the Terms of Use carefully before you start to use the Website. <strong>By using the Website or by clicking to accept or agree to the Terms of Use when this option is made available to you, you accept and agree to be bound and abide by these Terms of Use and our Privacy Policy, found at</strong> <a href="privacy.html">https://itsgirlcode.app/privacy</a><strong>, incorporated herein by reference.</strong> If you do not want to agree to these Terms of Use or the Privacy Policy, you must not access or use the Website.</p>
 <h2>2. Changes to the Terms of Use</h2>
 <p>We may revise and update these Terms of Use from time to time in our sole discretion. All changes are effective immediately when we post them and apply to all access to and use of the Website thereafter. Your continued use of the Website following the posting of revised Terms of Use means that you accept and agree to the changes. You are expected to check this page from time to time so you are aware of any changes, as they are binding on you.</p>
