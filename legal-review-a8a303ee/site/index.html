@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GirlCode — text me when you get home</title>
+<meta name="description" content="GirlCode is the text-me-when-you-get-home moment, built into one app. Share your plan with the people you pick. Location only until you check in.">
+<meta name="theme-color" content="#F2EDE3">
+<link rel="stylesheet" href="/fonts/fonts.css">
+<link rel="stylesheet" href="/styles.css">
+<style>
+.draft-bar{background:#f3e3a6;color:#111;border-bottom:1px solid #111;position:relative;z-index:50}
+.draft-bar p{margin:0;padding:10px 0;font-size:14px;line-height:1.5;color:#111}
+.draft-bar a{color:#111;text-underline-offset:3px}
+</style>
+</head>
+<body>
+<div class="draft-bar"><div class="wrap"><p><strong>Draft · not live.</strong> This is a draft of itsgirlcode.app with the final legal documents from counsel in place: <a href="terms.html">Terms of Use</a>, <a href="privacy.html">Privacy Policy</a> and <a href="website-terms.html">Website Terms of Use</a>, with suggested revisions applied. Please <a href="../">see every suggested change, marked</a>.</p></div></div>
+
+<header class="hero hero-photo">
+  <div class="wrap">
+    <div class="bar">
+      <a class="wordmark" href="index.html">GirlCode</a>
+    </div>
+    <div class="hero-grid">
+      <div class="hero-copy reveal">
+        <h1 class="shout">Go do your thing.<br>We've got your back.</h1>
+        <div class="stores">
+          <a class="badge" href="https://apps.apple.com/app/id6792979711"><img src="/assets/badge-app-store.svg" alt="Download on the App Store" width="144" height="48"></a>
+          <a class="badge" href="https://play.google.com/store/apps/details?id=com.asparko.girlcode"><img src="/assets/badge-google-play.png" alt="Get it on Google Play" width="162" height="48"></a>
+        </div>
+      </div>
+      <div class="device lg"><div class="screen"><img src="/assets/screen-09.jpg" alt="GirlCode on a date plan at dusk: 2 hours left, check in by 7:23 PM, Jess and Dani looped in"></div></div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="mat" aria-hidden="true"></div>
+  <section class="scene" aria-label="Your plan, your call" style="--img:url(/assets/photo-snow.jpg);--pos:50% 66%">
+    <div class="wrap scene-grid">
+      <div class="beat-copy on-dark reveal">
+        <h2 class="shout">Your plan, your call.</h2>
+        <p>Share your plan with your people.<br>Check in when you're home.<br>Miss it — they get the plan.</p>
+      </div>
+      <div class="device reveal" style="--d:.15s"><div class="screen"><img src="/assets/screen-03.jpg" alt="Making a plan: Snowboarding · Breck, choosing how your people hear — Silent, Heads-up, or Only if I miss it"></div></div>
+    </div>
+  </section>
+  <div class="mat" aria-hidden="true"></div>
+  <section class="scene flip" aria-label="Location only for the plan" style="--img:url(/assets/photo-hillside.jpg);--pos:50% 55%">
+    <div class="wrap scene-grid">
+      <div class="beat-copy reveal">
+        <h2 class="shout">Location —<br>only for the plan.</h2>
+        <p>Shared from heading out to check-in, then it stops.<br>No always-on tracking.<br>Privacy first.</p>
+      </div>
+      <div class="device reveal" style="--d:.15s"><div class="screen"><img src="/assets/screen-04.jpg" alt="Maya · Hiking · Cascade Pass: check in by 2:30 PM, her location while the plan is on"></div></div>
+    </div>
+  </section>
+  <section class="out ink-band" aria-label="Fake call">
+    <div class="wrap grid">
+      <div class="beat-copy reveal">
+        <h2 class="shout">Need an out?</h2>
+        <p>Schedule a fake call.<br>Your phone rings.<br>You've got a reason to go.</p>
+      </div>
+      <div class="device reveal" style="--d:.15s"><div class="screen"><img src="/assets/screen-05.jpg" alt="The fake call ringing: Work, mobile, with Decline and Accept"></div></div>
+    </div>
+  </section>
+
+  <section class="photo" aria-label="Real plans">
+    <div class="copy">
+      <div class="beat-copy reveal">
+        <p>A first date.<br>A night run.<br>A powder day.</p>
+        <h2 class="shout">We've got your back.</h2>
+      </div>
+    </div>
+    <img class="reveal" src="/assets/photo-bench.jpg" alt="A woman on a lit bench at night, seen from behind">
+  </section>
+</main>
+
+<div class="doc-foot"><div class="wrap"><footer class="site-foot">
+  <nav class="label" aria-label="Legal and help"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="website-terms.html">Website terms</a><a href="support.html">Support</a></nav>
+  <span class="label mail">hello@itsgirlcode.app</span>
+  <p class="note">© 2026 Asparko LLC</p>
+</footer></div></div>
+
+<script>
+/* Quiet reveals: copy rises in, then its phone; the photo settles from a slight zoom.
+   Only with JS and when the viewer hasn't asked for reduced motion; otherwise everything is simply visible. */
+(() => {
+  if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  document.documentElement.classList.add('motion');
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: 0.15, rootMargin: '0px 0px -6% 0px' });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+})();
+</script>
+
+</body>
+</html>
