@@ -16,11 +16,11 @@ mark.fill{background:#f3e3a6;color:#111;padding:0 .2em}
 .doc li>p{margin:0 0 6px}@media (max-width:600px){.doc ul.toc{columns:1}}
 .doc del{color:#8a3b2e;text-decoration:line-through;text-decoration-thickness:1px}
 .doc del *{color:#8a3b2e;text-decoration:line-through}
-.doc ins{background:#f3e3a6;color:#111;text-decoration:none;padding:0 .15em}
+.doc ins{background:#f3e3a6;color:#111;text-decoration:none;padding:0 .15em;box-shadow:inset 0 -2px 0 #111}
 .doc sup.n a{font-family:var(--label);font-size:12px;color:#111;text-decoration:none;background:#111;color:#F2EDE3;border-radius:9px;padding:0 6px;margin-left:3px}
 .doc .review-panel{border:1px solid #111;padding:16px 18px;margin:0 0 28px}
 .doc .review-panel p{margin:0 0 8px}.doc .review-panel p:last-child{margin:0}
-.doc ol.notes li{scroll-margin-top:24px}
+.doc ol.notes li{scroll-margin-top:24px}.doc sup.n{scroll-margin-top:120px}.doc hr.doc-start{border:0;border-top:1px solid #111;margin:32px 0}
 .doc .shots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin:20px 0 8px}
 .doc .shots figure{margin:0;display:flex;flex-direction:column;align-items:center;gap:10px}
 .doc .shots .device{--dw:260px}
@@ -52,7 +52,6 @@ mark.fill{background:#f3e3a6;color:#111;padding:0 .2em}
 <li><a href="terms.html">Terms of Use (End User License Agreement)</a> — published at itsgirlcode.app/terms · 4 suggested revisions</li>
 <li><a href="privacy.html">Privacy Policy</a> — published at itsgirlcode.app/privacy · 11 suggested revisions</li>
 <li><a href="website-terms.html">Website Terms of Use</a> — new page at itsgirlcode.app/website-terms · 6 suggested revisions</li>
-<li><a href="app-copy.html">In the app</a> — where users agree to the documents at sign-up and find them later, with screens, plus small changes planned for the next app update.</li>
 </ul>
 
 <h2>Kept as drafted</h2>
@@ -62,12 +61,43 @@ mark.fill{background:#f3e3a6;color:#111;padding:0 .2em}
 <li>The State Privacy Rights Rider stays internal and is not published.</li>
 </ul>
 
-<h2>Where these will live</h2>
+<h2 id="where">Where these will live</h2>
 <ul>
-<li><strong>In the app:</strong> agreed to at sign-up (three checkboxes, all required), and available any time after under Menu → Support → Legal. <a href="app-copy.html">See the screens</a>.</li>
-<li><strong>itsgirlcode.app:</strong> /terms, /privacy and /website-terms, linked from the footer of every page, plus the existing /delete-account and /support pages. <a href="site/">See the whole site in draft</a>.</li>
+<li><strong>itsgirlcode.app:</strong> /terms, /privacy and /website-terms, linked from the footer of every page, plus the existing /delete-account and /support pages. The Website Terms of Use cover itsgirlcode.app. <a href="site/">See the whole site in draft</a>.</li>
 <li><strong>App Store and Google Play:</strong> both listings already link to itsgirlcode.app/privacy. The App Store listing will use the Terms of Use as a custom EULA.</li>
-<li><strong>asparko.com:</strong> stays a one-page studio site, with one line, "Makers of GirlCode", linking to itsgirlcode.app.</li>
+<li><strong><a href="https://asparko.com">asparko.com</a>:</strong> stays a one-page studio site with no legal pages of its own, and one line, "Apps: GirlCode", linking to itsgirlcode.app.</li>
+<li><strong>In the app:</strong> agreed to at sign-up, and available any time after. Screens below.</li>
+</ul>
+
+<h2 id="in-the-app">In the app</h2>
+<p>Screens from the current app (version 1.0.0, build 4), which is in review at the App Store and Google Play and not yet public. The links in the app open the published Terms and Privacy Policy on itsgirlcode.app, so they will show the final documents once these are approved.</p>
+<h3>At sign-up</h3>
+<p>Before using GirlCode, every new account sees <strong>One thing before we start</strong>, with three checkboxes. <strong>Agree and continue</strong> only goes through once all three are ticked:</p>
+<ul>
+<li>I understand GirlCode is not an emergency service.</li>
+<li>I understand GirlCode is a supplement, not a substitute.</li>
+<li>I have read and agree to the Terms of Service and Privacy Policy, both linked.</li>
+</ul>
+<div class="shots">
+<figure><div class="device"><div class="screen"><img src="img/signup-unchecked.jpg" alt="Sign-up screen, One thing before we start, with three unticked checkboxes and a greyed Agree and continue button"></div></div><figcaption>Before ticking</figcaption></figure>
+<figure><div class="device"><div class="screen"><img src="img/signup-checked.jpg" alt="The same screen with all three checkboxes ticked and Agree and continue active"></div></div><figcaption>All three ticked</figcaption></figure>
+</div>
+
+<h3>Any time after sign-up</h3>
+<p>Both documents stay one tap away: <strong>Menu → Support → Legal</strong>, with <strong>Privacy policy</strong> and <strong>Terms of service</strong>.</p>
+<div class="shots">
+<figure><div class="device"><div class="screen"><img src="img/menu.jpg" alt="The app menu: Profile, Plan preferences, Trusted circle, History, Blocked, GirlCode+, Support"></div></div><figcaption>Menu → Support</figcaption></figure>
+<figure><div class="device"><div class="screen"><img src="img/support.jpg" alt="The Support screen, with a Legal section listing Privacy policy and Terms of service"></div></div><figcaption>Support → Legal</figcaption></figure>
+</div>
+
+<h3>Planned for the next app update</h3>
+<p>Not in the app yet. Comments welcome.</p>
+<ul>
+<li>Rename "Terms of Service" to <strong>Terms of Use</strong> on the sign-up checkbox and in Support, to match the final document.</li>
+<li>Add any wording for under-18 users that counsel advises to the third checkbox.</li>
+<li>Record which version was accepted, and when, on each account.</li>
+<li>When the documents change, show existing accounts a one-time notice: "We've updated our Terms of Use and Privacy Policy," with both links and a <strong>Got it</strong> button. Never during an active plan.</li>
+<li>Subscribe screen: links beside the subscribe button read <strong>Terms of Use (EULA) · Privacy Policy</strong>.</li>
 </ul>
 
 <p>Questions are in the email that came with this link. Thank you!</p>

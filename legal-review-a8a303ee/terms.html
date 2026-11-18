@@ -16,11 +16,11 @@ mark.fill{background:#f3e3a6;color:#111;padding:0 .2em}
 .doc li>p{margin:0 0 6px}@media (max-width:600px){.doc ul.toc{columns:1}}
 .doc del{color:#8a3b2e;text-decoration:line-through;text-decoration-thickness:1px}
 .doc del *{color:#8a3b2e;text-decoration:line-through}
-.doc ins{background:#f3e3a6;color:#111;text-decoration:none;padding:0 .15em}
+.doc ins{background:#f3e3a6;color:#111;text-decoration:none;padding:0 .15em;box-shadow:inset 0 -2px 0 #111}
 .doc sup.n a{font-family:var(--label);font-size:12px;color:#111;text-decoration:none;background:#111;color:#F2EDE3;border-radius:9px;padding:0 6px;margin-left:3px}
 .doc .review-panel{border:1px solid #111;padding:16px 18px;margin:0 0 28px}
 .doc .review-panel p{margin:0 0 8px}.doc .review-panel p:last-child{margin:0}
-.doc ol.notes li{scroll-margin-top:24px}
+.doc ol.notes li{scroll-margin-top:24px}.doc sup.n{scroll-margin-top:120px}.doc hr.doc-start{border:0;border-top:1px solid #111;margin:32px 0}
 .doc .shots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin:20px 0 8px}
 .doc .shots figure{margin:0;display:flex;flex-direction:column;align-items:center;gap:10px}
 .doc .shots .device{--dw:260px}
@@ -40,7 +40,16 @@ mark.fill{background:#f3e3a6;color:#111;padding:0 .2em}
 <main class="doc">
   <p class="label eyebrow">Draft for review · not live</p>
   <h1>Terms of Use (End User License Agreement)</h1>
-<div class="review-panel"><p><strong>Draft for review — not live.</strong> This is the final Terms of Use (End User License Agreement) as delivered, laid out the way it will appear on itsgirlcode.app. Suggested revisions are marked: <del>struck text</del> is the original wording, <ins>highlighted text</ins> is the suggested change, and each numbered mark leads to a short note explaining why (4 in this document).</p><p><a href="#notes">Jump to the notes</a></p></div>
+<div class="review-panel"><p><strong>Draft for review — not live.</strong> This is the final Terms of Use (End User License Agreement) as delivered, laid out the way it will appear on itsgirlcode.app. Every suggested revision is marked in the text: <del>struck text</del> is the original wording, <ins>highlighted text</ins> is the suggested change, and each numbered mark leads to its note below. Everything else is the original wording, unchanged.</p></div>
+<h2 id="changes">Suggested changes in this document (4)</h2>
+<p>Each link jumps to the change in the text.</p>
+<ol class="notes">
+<li id="n1"><p><a href="#r1">Change 1</a> — GirlCode's website is itsgirlcode.app. asparko.com is a one-page studio site with no legal pages, so the Website Terms of Use and Privacy Policy will live on itsgirlcode.app.</p></li>
+<li id="n2"><p><a href="#r2">Change 2</a> — Fills the [add URL] placeholder and updates the Privacy Policy URL to its permanent home (already set in App Store Connect and Google Play).</p></li>
+<li id="n3"><p><a href="#r3">Change 3</a> — Account requests go to the dedicated privacy@itsgirlcode.app inbox, matching our account-deletion page.</p></li>
+<li id="n4"><p><a href="#r4">Change 4</a> — Fills the address placeholder with the company's business mailbox, and adds a phone number, which Apple's minimum EULA terms ask for alongside the address and email. We'd prefer this to be the only place a postal address appears.</p></li>
+</ol>
+<hr class="doc-start">
 <p>This Mobile Application End User License Agreement ("<strong>Agreement</strong>") is a binding agreement between you ("<strong>End User</strong>" or "<strong>you</strong>") and ASPARKO LLC ("<strong>Company</strong>"). This Agreement governs your use of the GirlCode mobile application on iPhone or Android devices (including all related documentation, the "<strong>Application</strong>"). The Application is licensed, not sold, to you.</p>
 <p>BY CLICKING THE "AGREE" BUTTON OR BY DOWNLOADING, INSTALLING, OR USING THE APPLICATION, YOU (A) ACKNOWLEDGE THAT YOU HAVE READ AND UNDERSTAND THIS AGREEMENT; (B) REPRESENT THAT YOU ARE AT LEAST 13 YEARS OF AGE AND, IF YOU ARE UNDER 18 YEARS OF AGE (OR THE AGE OF MAJORITY WHERE YOU LIVE), THAT YOUR PARENT OR LEGAL GUARDIAN HAS REVIEWED AND AGREED TO THIS AGREEMENT ON YOUR BEHALF; AND (C) ACCEPT THIS AGREEMENT AND AGREE THAT YOU ARE LEGALLY BOUND BY ITS TERMS. THE APPLICATION IS NOT INTENDED FOR CHILDREN UNDER 13. IF YOU DO NOT AGREE TO THESE TERMS, DO NOT DOWNLOAD THE APPLICATION.</p>
 <ol type="1">
@@ -146,13 +155,7 @@ mark.fill{background:#f3e3a6;color:#111;padding:0 .2em}
 <li><p><strong>Waiver</strong>. No failure to exercise, and no delay in exercising, on the part of either party, any right or any power hereunder shall operate as a waiver thereof, nor shall any single or partial exercise of any right or power hereunder preclude further exercise of that or any other right hereunder.</p></li>
 </ol>
 
-<h2 id="notes">Notes on suggested revisions</h2>
-<ol class="notes">
-<li id="n1"><p>GirlCode's website is itsgirlcode.app. asparko.com is a one-page studio site with no legal pages, so the Website Terms of Use and Privacy Policy will live on itsgirlcode.app. <a href="#r1">↑</a></p></li>
-<li id="n2"><p>Fills the [add URL] placeholder and updates the Privacy Policy URL to its permanent home (already set in App Store Connect and Google Play). <a href="#r2">↑</a></p></li>
-<li id="n3"><p>Account requests go to the dedicated privacy@itsgirlcode.app inbox, matching our account-deletion page. <a href="#r3">↑</a></p></li>
-<li id="n4"><p>Fills the address placeholder with the company's business mailbox, and adds a phone number, which Apple's minimum EULA terms ask for alongside the address and email. We'd prefer this to be the only place a postal address appears. <a href="#r4">↑</a></p></li>
-</ol>
+
   <p class="label eyebrow">Draft · 4 suggested revisions</p>
 </main>
 <div class="doc-foot"><div class="wrap"><footer class="site-foot">

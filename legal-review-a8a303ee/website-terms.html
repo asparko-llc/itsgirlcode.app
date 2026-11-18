@@ -16,11 +16,11 @@ mark.fill{background:#f3e3a6;color:#111;padding:0 .2em}
 .doc li>p{margin:0 0 6px}@media (max-width:600px){.doc ul.toc{columns:1}}
 .doc del{color:#8a3b2e;text-decoration:line-through;text-decoration-thickness:1px}
 .doc del *{color:#8a3b2e;text-decoration:line-through}
-.doc ins{background:#f3e3a6;color:#111;text-decoration:none;padding:0 .15em}
+.doc ins{background:#f3e3a6;color:#111;text-decoration:none;padding:0 .15em;box-shadow:inset 0 -2px 0 #111}
 .doc sup.n a{font-family:var(--label);font-size:12px;color:#111;text-decoration:none;background:#111;color:#F2EDE3;border-radius:9px;padding:0 6px;margin-left:3px}
 .doc .review-panel{border:1px solid #111;padding:16px 18px;margin:0 0 28px}
 .doc .review-panel p{margin:0 0 8px}.doc .review-panel p:last-child{margin:0}
-.doc ol.notes li{scroll-margin-top:24px}
+.doc ol.notes li{scroll-margin-top:24px}.doc sup.n{scroll-margin-top:120px}.doc hr.doc-start{border:0;border-top:1px solid #111;margin:32px 0}
 .doc .shots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin:20px 0 8px}
 .doc .shots figure{margin:0;display:flex;flex-direction:column;align-items:center;gap:10px}
 .doc .shots .device{--dw:260px}
@@ -40,7 +40,18 @@ mark.fill{background:#f3e3a6;color:#111;padding:0 .2em}
 <main class="doc">
   <p class="label eyebrow">Draft for review · not live</p>
   <h1>Website Terms of Use</h1>
-<div class="review-panel"><p><strong>Draft for review — not live.</strong> This is the final Website Terms of Use as delivered, laid out the way it will appear on itsgirlcode.app. Suggested revisions are marked: <del>struck text</del> is the original wording, <ins>highlighted text</ins> is the suggested change, and each numbered mark leads to a short note explaining why (6 in this document).</p><p><a href="#notes">Jump to the notes</a></p></div>
+<div class="review-panel"><p><strong>Draft for review — not live.</strong> This is the final Website Terms of Use as delivered, laid out the way it will appear on itsgirlcode.app. Every suggested revision is marked in the text: <del>struck text</del> is the original wording, <ins>highlighted text</ins> is the suggested change, and each numbered mark leads to its note below. Everything else is the original wording, unchanged.</p></div>
+<h2 id="changes">Suggested changes in this document (6)</h2>
+<p>Each link jumps to the change in the text.</p>
+<ol class="notes">
+<li id="n1"><p><a href="#r1">Change 1</a> — The Last Modified date will be set to the day this version goes live.</p></li>
+<li id="n2"><p><a href="#r2">Change 2</a> — Scope moved to itsgirlcode.app, GirlCode's website. asparko.com will stay a one-page studio site without its own terms. Is that acceptable?</p></li>
+<li id="n3"><p><a href="#r3">Change 3</a> — Privacy Policy URL updated to its permanent home.</p></li>
+<li id="n4"><p><a href="#r4">Change 4</a> — Public contact uses the support@itsgirlcode.app inbox.</p></li>
+<li id="n5"><p><a href="#r5">Change 5</a> — We'd prefer not to publish the city. Is the state sufficient here?</p></li>
+<li id="n6"><p><a href="#r6">Change 6</a> — Public contact uses the support@itsgirlcode.app inbox.</p></li>
+</ol>
+<hr class="doc-start">
 <del><p>Last Modified: November 5, 2026</p></del><ins><p>Last Modified: <mark class="fill">[publish date]</mark></p></ins><sup class="n" id="r1"><a href="#n1">1</a></sup>
 <h2>1. Acceptance of the Terms of Use</h2>
 <p>These terms of use are entered into by and between You and ASPARKO LLC ("<strong>Company</strong>," "<strong>we</strong>," or "<strong>us</strong>"). The following terms and conditions, together with any documents they expressly incorporate by reference (collectively, "<strong>Terms of Use</strong>"), <del>govern your access to and use of <a href="https://asparko.com/">https://asparko.com/</a> including any content, functionality and services offered on or through <a href="https://asparko.com/">https://asparko.com/</a> (the</del><ins>govern your access to and use of <a href="site/">https://itsgirlcode.app</a> including any content, functionality and services offered on or through <a href="site/">https://itsgirlcode.app</a> (the</ins><sup class="n" id="r2"><a href="#n2">2</a></sup> "<strong>Website</strong>"), whether as a guest or a registered user.</p>
@@ -128,15 +139,7 @@ mark.fill{background:#f3e3a6;color:#111;padding:0 .2em}
 <p><del>This website is operated by ASPARKO LLC, BOULDER, Colorado.</del><ins>This website is operated by ASPARKO LLC, Colorado.</ins><sup class="n" id="r5"><a href="#n5">5</a></sup></p>
 <p>All other feedback, comments, requests for technical support and other communications relating to the Website <del>should be directed to: kj@asparko.com.</del><ins>should be directed to: <span class="mail">support@itsgirlcode.app</span>.</ins><sup class="n" id="r6"><a href="#n6">6</a></sup></p>
 
-<h2 id="notes">Notes on suggested revisions</h2>
-<ol class="notes">
-<li id="n1"><p>The Last Modified date will be set to the day this version goes live. <a href="#r1">↑</a></p></li>
-<li id="n2"><p>Scope moved to itsgirlcode.app, GirlCode's website. asparko.com will stay a one-page studio site without its own terms. Is that acceptable? <a href="#r2">↑</a></p></li>
-<li id="n3"><p>Privacy Policy URL updated to its permanent home. <a href="#r3">↑</a></p></li>
-<li id="n4"><p>Public contact uses the support@itsgirlcode.app inbox. <a href="#r4">↑</a></p></li>
-<li id="n5"><p>We'd prefer not to publish the city. Is the state sufficient here? <a href="#r5">↑</a></p></li>
-<li id="n6"><p>Public contact uses the support@itsgirlcode.app inbox. <a href="#r6">↑</a></p></li>
-</ol>
+
   <p class="label eyebrow">Draft · 6 suggested revisions</p>
 </main>
 <div class="doc-foot"><div class="wrap"><footer class="site-foot">
